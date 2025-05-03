@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, paper, scissors game</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: brown;
+            height: 100vh;
+        }
+        .game{
+            width: 550px;
+            padding: 20px;
+            background-color: #fff;
+        }
+        .game img{
+            width: 31%;
+        }
+    </style>
+</head>
+<body>
+    <div class="game">
+        <p class="cPoint">Computer point:0</p>
+        <p class="pPpoint">Player point</p>
+        <img src="https://images-ext-1.discordapp.net/external/agBB_3WcOHfcTSICd5-2rxvvZYIzZtfqGhVwSzcizYY/https/www.nicepng.com/png/detail/111-1113456_jpg-black-and-white-download-game-your-hand.png?format=webp&quality=lossless&width=1025&height=410" onclick="play('paper')">
+        <img src="https://images-ext-1.discordapp.net/external/fjf6bkN8vJgYTrmmNJxC38g1JaQJpOeV6JTI-v6QWdc/https/www.seekpng.com/png/detail/111-1113624_rock-computers-hand-playing-paper-paper.png?format=webp&quality=lossless&width=1025&height=431" onclick="play('scissors')">
+        <img src="https://images-ext-1.discordapp.net/external/vsgQDGiB-M5oirQxx9ML4-hjsU6m7q9Asrmnb-Ic8-E/https/www.pngkey.com/png/full/173-1734880_jpg-free-download-game-rock-paper-scissors-clipart.png?format=webp&quality=lossless&width=611&height=341" onclick="play('rock')">
+        <p class="pChoice">Player choice:</p>
+        <p class="cChoice">Computer choice:</p>
+        <p class="result">Winner:</p>
+        <button onclick="reset()">reset</button>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
+
+
+
+
